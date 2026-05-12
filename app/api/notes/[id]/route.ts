@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase, Note } from '@/lib/supabase'
 
+export const runtime = 'edge'
+
 // GET /api/notes/:id - 获取单条笔记
 export async function GET(
   request: NextRequest,
